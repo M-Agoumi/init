@@ -1,0 +1,8 @@
+if (userdel tester)
+then
+	echo 'user deleted'
+else
+	id = `userdel tester | awk '{print $9}'`
+	kill $id
+	userdel tester
+fi

@@ -1,2 +1,1 @@
-sudo iptables -p INPUT DROP
-sudo iptables -p OUTPUT DROP
+ls /etc/init.d
