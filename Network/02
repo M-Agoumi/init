@@ -1,1 +1,4 @@
-ifconfig -L en0 | grep "inet " | cut -d " " -f2
+add=`ifconfig | grep "broadcast" | cut -d " " -f6`
+echo $add
+ping -c 1 $add > /dev/null
+arp -a | grep -v ? | cut -d '(' -f2 | cut -d ')' -f 1
