@@ -1,1 +1,1 @@
-ssh localhost -p22
+ssh magoumi@10.11.100.85
